@@ -1,6 +1,6 @@
 // Nathan Altice
 // Text Machine
-// An assortment of Phaser 3 text examples
+// An assortment of Phaser 3 text examples including config options, text with physics, web fonts, and bitmap text
 // Created: 5/8/23
 
 'use strict'
@@ -13,10 +13,10 @@ let config = {
     physics: {
         default: 'arcade',
         arcade: {
-            debug: true
+            //debug: true
         }
     },
-    scene: [ PhysicsText, Basic ]
+    scene: [ Load, Basic, PhysicsText, WebFont, BitmapTextExample,  ]
 }
 
 const game = new Phaser.Game(config)
@@ -24,6 +24,8 @@ const game = new Phaser.Game(config)
 let { width, height } = game.config
 let centerX = width / 2
 let centerY = height / 2
+let sceneSwitchKey
+let sceneResetKey
 
 // Phaser 3 Text examples: https://labs.phaser.io/index.html?dir=game%20objects/text/&q=
 // == BASICS ==
