@@ -59,6 +59,7 @@ class PhysicsText extends Phaser.Scene {
         }
         textDirection.normalize()
         this.exampleText.body.setVelocity(this.TEXT_VEL * textDirection.x, this.TEXT_VEL * textDirection.y)
+        
         // text angular rotation
         if(Phaser.Input.Keyboard.JustDown(this.leftRotationKey)) {
             this.exampleText.body.setAngularVelocity(Phaser.Math.Between(-500, -50))

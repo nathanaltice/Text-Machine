@@ -5,7 +5,7 @@ class Load extends Phaser.Scene {
 
     preload() {
         // load our remote Web Font Loader script
-        this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+        this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js')
     }
 
     create() {
