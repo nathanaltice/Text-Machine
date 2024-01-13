@@ -23,6 +23,6 @@ class Load extends Phaser.Scene {
                 console.log('web fonts rendered 👍')
                 currentScene.scene.start('basicScene')
             }
-        });
+        })
     }
 }

@@ -34,7 +34,7 @@ class Basic extends Phaser.Scene {
             wordWrap: {
                 width: 700
             },
-            lineSpacing: 9
+            lineSpacing: 15
         }
 
         const style3 = {

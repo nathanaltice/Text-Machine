@@ -1,6 +1,6 @@
 class BitmapTextExample extends Phaser.Scene {
     constructor() {
-        super({key: 'bitmaptextexampleScene'})
+        super({ key: 'bitmaptextexampleScene' })
     }
 
     preload() {

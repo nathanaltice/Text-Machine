@@ -1,13 +1,14 @@
 class PhysicsText extends Phaser.Scene {
     constructor() {
         super({key: 'physicstextScene'})
+    }
 
+    init() {
         this.TEXT_VEL = 300
+        this.physics.world.gravity.y = 100
     }
 
     create() {
-        this.physics.world.gravity.y = 100
-
         // define example text
         this.exampleText = this.add.text(centerX, centerY, 'Poetry', {
             fontFamily: 'Verdana',

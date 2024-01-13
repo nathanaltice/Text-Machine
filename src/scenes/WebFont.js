@@ -1,6 +1,6 @@
 class WebFont extends Phaser.Scene {
     constructor() {
-        super({key: 'webfontScene'})
+        super({ key: 'webfontScene' })
     }
 
     create() {

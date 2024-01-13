@@ -1,7 +1,8 @@
 // Nathan Altice
+// Created: 5/8/23
+// Updated: 1/13/24
 // Text Machine
 // An assortment of Phaser 3 text examples including config options, text with physics, web fonts, and bitmap text
-// Created: 5/8/23
 
 'use strict'
 
