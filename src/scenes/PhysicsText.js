@@ -33,6 +33,7 @@ class PhysicsText extends Phaser.Scene {
         // info text
         document.getElementById('info').innerHTML = `Cursors: move center text | Q: rotate left | E: rotate right | SPACE: 🌧️ | S: Switch scene`
 
+        // colliders
         this.physics.add.collider(this.alphaBits)
         this.physics.add.collider(this.exampleText, this.alphaBits)
     }
@@ -77,8 +78,8 @@ class PhysicsText extends Phaser.Scene {
 
     textRain() {
         let spawnPositionX = Math.random() * width
-        let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-        //let alphabet = 'あえいうおはへひふほかけきくこまめみむもられりるろたてちつと'
+        //let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        let alphabet = 'あえいうおはへひふほかけきくこまめみむもられりるろたてちつと'
         let character = alphabet.charAt(Math.floor(Math.random() * alphabet.length))
         let alphaBit = this.add.text(spawnPositionX, 0, character, {
             fontFamily: 'Verdana',

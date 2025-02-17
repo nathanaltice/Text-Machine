@@ -4,14 +4,12 @@ class WebFont extends Phaser.Scene {
     }
 
     create() {
-        // ⛔️ IMPORTANT ⛔️
-        // Most of the setup for this example is done in Load.js
-        // None of these fonts will work unless they are loaded from Google via the Web Font Loader script
+        // Note that these fonts are loaded in the Load.js scene
 
         // add the text
         this.add.text(0, 0, 'This text should be set in Caveat (not Papyrus).', {
             fontFamily: 'Caveat, Papyrus',  // adding Papyrus in our font stack will show us if the font didn't load
-            fontSize: '48px',
+            fontSize: '32px',
             color: 'yellow'
         })
 
@@ -20,14 +18,14 @@ class WebFont extends Phaser.Scene {
             fontSize: '48px'
         })
 
-        this.add.text(0, 128, 'This text should be set in Bruno Ace.', {
-            fontFamily: 'Bruno Ace, Papyrus',
-            fontSize: '24px',
+        this.add.text(0, 128, 'This text should be set in Tangerine.', {
+            fontFamily: 'Tangerine-Regular, Papyrus',
+            fontSize: '52px',
             color: '#42F5DA'
         })
 
         this.add.text(0, 192, 'This text should be set in Rubik Pixels.', {
-            fontFamily: 'Rubik Pixels, Papyrus',
+            fontFamily: 'Rubik, Papyrus',
             fontSize: '36px',
             color: '#ebc986'
         })
